@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const div = document.createElement('div');
         div.className = `shape ${shape}`;
         div.style.position = 'absolute';
-        div.style.top = `${Math.random() * window.innerHeight}px`;
-        div.style.left = `${Math.random() * window.innerWidth}px`;
+        div.style.top = `${(Math.random() * window.innerHeight * 0.7 + 50)}px`;
+        div.style.left = `${(Math.random() * window.innerWidth * 0.7 + 20)}px`;
 
         div.addEventListener('dblclick', function() {
             this.remove();
