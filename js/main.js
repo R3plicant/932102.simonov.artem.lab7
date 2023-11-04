@@ -42,8 +42,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     squareButton.addEventListener('click', function() {
         var input = document.querySelector('.text-input');
-        var inputNumber = Number(input.value)
-        var i = 0
+        var inputNumber = Number(input.value);
+        var i = 0;
+        if (inputNumber > 10000) {
+            inputNumber = 1;
+            alert("Количество отрисовываемых фигур должно быть меньше 10000 \n" + "Отрисована одна фигура");
+        } else if (inputNumber <= 0) {
+            inputNumber = 1;
+            alert("Количество отрисовываемых фигур должно быть больше 0 \n" + "Отрисована одна фигура");
+        } else if (isNaN(inputNumber)) {
+            inputNumber = 1;
+            alert("Количество отрисовываемых фигур должно быть числом \n" + "Отрисована одна фигура");
+        }
         do {
             createShape('square');    
             i += 1;
@@ -52,8 +62,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     triangleButton.addEventListener('click', function() {
         var input = document.querySelector('.text-input');
-        var inputNumber = Number(input.value)
-        var i = 0
+        var inputNumber = Number(input.value);
+        var i = 0;
+        if (inputNumber > 10000) {
+            inputNumber = 1;
+            alert("Количество отрисовываемых фигур должно быть меньше 10000 \n" + "Отрисована одна фигура");
+        } else if (inputNumber <= 0) {
+            inputNumber = 1;
+            alert("Количество отрисовываемых фигур должно быть больше 0 \n" + "Отрисована одна фигура");
+        } else if (isNaN(inputNumber)) {
+            inputNumber = 1;
+            alert("Количество отрисовываемых фигур должно быть числом \n" + "Отрисована одна фигура");
+        }
         do {
             createShape('triangle');    
             i += 1;
@@ -62,8 +82,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     circleButton.addEventListener('click', function() {
         var input = document.querySelector('.text-input');
-        var inputNumber = Number(input.value)
-        var i = 0
+        var inputNumber = Number(input.value);
+        var i = 0;
+        if (inputNumber > 10000) {
+            inputNumber = 1;
+            alert("Количество отрисовываемых фигур должно быть меньше 10000 \n" + "Отрисована одна фигура");
+        } else if (inputNumber <= 0) {
+            inputNumber = 1;
+            alert("Количество отрисовываемых фигур должно быть больше 0 \n" + "Отрисована одна фигура");
+        } else if (isNaN(inputNumber)) {
+            inputNumber = 1;
+            alert("Количество отрисовываемых фигур должно быть числом \n" + "Отрисована одна фигура");
+        }
+  
         do {
             createShape('circle');    
             i += 1;
